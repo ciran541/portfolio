@@ -63,7 +63,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="mt-12 pt-8 border-t border-border/50 text-center text-xs text-muted/60">
-              © {new Date().getFullYear()} Growth & Martech Portfolio. Built with Next.js.
+              © {new Date().getFullYear()} CIRANJIVI BALU. All rights reserved.
             </div>
           </div>
         </footer>
