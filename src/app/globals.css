@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-primary: #3b82f6;
+  --color-secondary: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-card: #f8fafc;
+
+  --animate-bounce-slow: bounce-slow 4s ease-in-out infinite;
+
+  @keyframes bounce-slow {
+
+    0%,
+    100% {
+      transform: translateY(0) rotate(4deg);
+    }
+
+    50% {
+      transform: translateY(-20px) rotate(4deg);
+    }
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --primary: #3b82f6;
+  --secondary: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --card: #f8fafc;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+.metric-card {
+  @apply p-6 rounded-xl border border-border bg-card shadow-sm hover:shadow-md transition-shadow;
+}
+
+.case-study-card {
+  @apply rounded-xl border border-border overflow-hidden bg-white hover:border-primary/50 transition-colors;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-secondary text-white rounded-lg font-medium hover:bg-secondary/90 transition-colors;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border border-border rounded-lg font-medium hover:bg-card transition-colors;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 60s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee,
+.marquee-container:hover .animate-marquee-reverse {
+  animation-play-state: paused;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
