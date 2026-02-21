@@ -45,24 +45,36 @@ const CASE_STUDIES_DETAILS = {
         ],
         impact: [
             "Marketing spend became predictable",
-            "Customer acquisition became scalable",
+            "Efficiency-first scaling (Startup Budget)",
             "Sales efficiency improved",
-            "Profit margins strengthened"
+            "Customer acquisition became repeatable"
         ],
-        insight: "In high-cost industries like finance, CPL is not controlled by bids — it’s controlled by system design.",
+        insight: "For startups, growth is not about spending more — it's about engineering a system where every dollar works 2x harder through signal accuracy.",
         proofs: [
             {
-                title: "Results Snapshot: Before vs After",
-                description: "Drastic reduction in acquisition costs while scaling quality. CPL dropped from ~$80 to consistently under $35.",
-                type: "comparison",
+                title: "Efficiency Timeline: System Readiness",
+                description: "Sustainable CPL reduction achieved through technical signal stability. While leads are managed against a startup budget, the acquisition efficiency has improved by over 60%.",
+                type: "grid",
                 images: [
                     {
-                        url: "https://res.cloudinary.com/dheuvrpwd/image/upload/v1771664044/before_report_June_2025_imevmi.png",
-                        label: "Baseline: June 2025 (~$80 CPL)"
+                        url: "https://res.cloudinary.com/dheuvrpwd/image/upload/v1771684617/Junjuly-report-2025_i4ftpz.png",
+                        label: "Phase 01: Baseline Acquisition (June / July 2025)"
                     },
                     {
-                        url: "https://res.cloudinary.com/dheuvrpwd/image/upload/v1771664044/after-report_Jan_2026_hppnxb.png",
-                        label: "Optimised: Jan 2026 (~$25 CPL)"
+                        url: "https://res.cloudinary.com/dheuvrpwd/image/upload/v1771684867/oct-report_2025_lbaybr.png",
+                        label: "Phase 02: Tracking & Signal Optimization (Oct 2025)"
+                    },
+                    {
+                        url: "https://res.cloudinary.com/dheuvrpwd/image/upload/v1771684868/Nov_report_2025_yfzdmp.png",
+                        label: "Phase 03: Performance & Quality Pass (Nov 2025)"
+                    },
+                    {
+                        url: "https://res.cloudinary.com/dheuvrpwd/image/upload/v1771684867/dec-report_2025_uq1eod.png",
+                        label: "Phase 04: CPL Stabilization (Dec 2025)"
+                    },
+                    {
+                        url: "https://res.cloudinary.com/dheuvrpwd/image/upload/v1771685179/After_report_jan_rnaf9f.png",
+                        label: "Phase 05: Foundation Ready for Scale (Jan 2026)"
                     }
                 ]
             },
