@@ -54,6 +54,7 @@ const CASE_STUDIES_DETAILS = {
             {
                 title: "Efficiency Timeline: System Readiness",
                 description: "Sustainable CPL reduction achieved through technical signal stability. While leads are managed against a startup budget, the acquisition efficiency has improved by over 60%.",
+                footerNote: "Note: CPL and lead volume are highly subject to industry and business type. For example, the Finance sector typically carries a higher CPL with lower volume due to competition and ticket size, while other industries may see significantly lower CPL and higher volume. These metrics demonstrate the efficiency of this specific system, not a universal benchmark.",
                 type: "grid",
                 images: [
                     {
@@ -554,6 +555,21 @@ export default async function CaseStudyDetail({ params }: { params: Promise<{ sl
                                             </div>
                                         ))}
                                     </div>
+
+                                    {proof.footerNote && (
+                                        <div className="mt-12 p-6 bg-slate-50 border border-slate-200 rounded-2xl">
+                                            <div className="flex gap-4 items-start">
+                                                <div className="flex-shrink-0 mt-1">
+                                                    <svg className="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                </div>
+                                                <p className="text-sm text-slate-500 italic leading-relaxed">
+                                                    {proof.footerNote}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
